@@ -1,0 +1,14 @@
+<div metal:use-macro="view.layout">
+
+    <div metal:fill-slot="content">
+        <h1>The Blog Site!</h1>
+
+        <div class="post-list">
+            <div class="post" tal:repeat="p posts">
+                <h3>${p.title}</h3>
+                <a href="/posts/${p.url}">Read more...</a>
+            </div>
+        </div>
+    </div>
+
+</div>

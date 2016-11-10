@@ -1,0 +1,9 @@
+<div metal:use-macro="view.layout">
+
+    <div metal:fill-slot="content">
+        <h1>The Blog Site - About</h1>
+
+        This is a fun site!
+    </div>
+
+</div>
