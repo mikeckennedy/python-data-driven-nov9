@@ -6,7 +6,8 @@
         <div class="post-list">
             <div class="post" tal:repeat="p posts">
                 <h3>${p.title}</h3>
-                <a href="/posts/${p.url}">Read more...</a>
+                <a href="/posts/details/${p.url}">Read more...</a>
+                <div class="text-muted">Comments: ${len(p.comments)}</div>
             </div>
         </div>
     </div>
