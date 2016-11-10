@@ -12,6 +12,7 @@ class HomeController(BaseController):
         session = db.session_factory()
         all_posts = session.query(Post).\
             options(joinedload('comments')).\
+            order_by(Post.pub_date.desc()).\
             all()
 
         return {'posts': all_posts}

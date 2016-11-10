@@ -16,3 +16,13 @@ body {
     font-size: 18px;
     margin-right: 10px;
 }
+
+form .form-control{
+    max-width: 350px;
+    margin: 10px;
+}
+
+.errors {
+    font-weight:bold;
+    color: red;
+}

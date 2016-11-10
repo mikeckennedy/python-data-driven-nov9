@@ -1,0 +1,25 @@
+<div metal:use-macro="view.layout">
+
+    <div metal:fill-slot="content">
+        <h1>Create Post</h1>
+
+        <div class="errors" tal:condition="error_msg">
+            ${error_msg}
+        </div>
+
+        <form action="" method="POST">
+
+            <input type="text" name="title" required value="${title}" placeholder=" Post title" class="form-control" />
+            <input type="text" name="url" required value="${url}" placeholder=" Url fragment" class="form-control"  />
+            <textarea name="content" required  cols="30" rows="10"
+            class="form-control" placeholder="Text of your post"
+            >${content}</textarea>
+            <button type="submit"
+            class="btn btn-primary"
+            >Create post</button>
+        </form>
+
+
+    </div>
+
+</div>

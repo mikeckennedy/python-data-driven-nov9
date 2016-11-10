@@ -31,7 +31,8 @@
 <div class="nav">
     <a href="/">Home</a>
     <a href="/home/about">About</a>
-    <a href="/posts">All posts</a>
+    <a href="/posts/create_post">New post</a>
+    <a href="/home/setup_db">Prime the db</a>
 </div>
 
 <div class="main_content">

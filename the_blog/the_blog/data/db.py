@@ -20,7 +20,7 @@ db_file = os.path.join(web_root, 'data_store', 'blog.sqlite')
 conn_string = 'sqlite:///' + db_file
 
 # one engine per connection string
-engine = sqlalchemy.create_engine(conn_string, echo=True)  # , echo=True)
+engine = sqlalchemy.create_engine(conn_string, echo=False)  # , echo=True)
 # one base class per DB
 SqlAlchemyBase.metadata.create_all(engine)
 # one factory per db
