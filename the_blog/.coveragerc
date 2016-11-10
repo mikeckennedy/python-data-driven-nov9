@@ -1,0 +1,3 @@
+[run]
+source = the_blog
+omit = the_blog/test*
